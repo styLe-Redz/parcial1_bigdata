@@ -10,7 +10,7 @@
         "runtime": "python3.9",
         "s3_bucket": "parcial1lectura",
         "events": [{
-           "function": "leer_archivo.obtener_html", 
+           "function": "leer_archivo.app", 
            "expression": "cron(00 09 * * ? *)" 
        }]
     },
@@ -26,7 +26,7 @@
         "runtime": "python3.9",
         "s3_bucket": "parcial1lectura",
         "events": [{
-            "function": "procesar_archivo.f",
+            "function": "procesar_archivo.app",
             "event_source": {
                   "arn":  "arn:aws:s3:::parcial1lectura",
                   "events": [

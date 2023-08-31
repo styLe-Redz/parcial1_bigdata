@@ -1,6 +1,6 @@
 {
     "dev": {
-        "app_function": "leer_archivo.app",
+        "app_function": "leer_archivo.obtener_html",
         "keep_warm": false,
         "role_name": "LabRole",
         "manage_roles": false,
@@ -10,13 +10,13 @@
         "runtime": "python3.9",
         "s3_bucket": "parcial1lectura",
         "events": [{
-           "function": "leer_archivo.app", 
+           "function": "leer_archivo.obtener_html", 
            "expression": "cron(00 09 * * ? *)" 
        }]
     },
     
     "dev2": {
-        "app_function": "procesar_archivo.app",
+        "app_function": "procesar_archivo.f",
         "keep_warm": false,
         "role_name": "LabRole",
         "manage_roles": false,
@@ -26,7 +26,7 @@
         "runtime": "python3.9",
         "s3_bucket": "parcial1lectura",
         "events": [{
-            "function": "procesar_archivo.app",
+            "function": "procesar_archivo.f",
             "event_source": {
                   "arn":  "arn:aws:s3:::parcial1lectura",
                   "events": [

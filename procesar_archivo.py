@@ -46,11 +46,17 @@ def f():
                                           '/periodico=eltiempo/year=' +
                                           nombre[:4]+'/month=' +
                                           nombre[5:7]+'/day=' +
-                                          nombre[8:]+'/eltiempo.csv'))
+                                          nombre[8:]+'/' +
+                                          nombre[:4]+'-' +
+                                          nombre[5:7]+'-' +
+                                          nombre[8:]+'.csv'))
     boto3.client('s3').put_object(Body=csv_publimetro,
                                   Bucket='parcial1lectura',
                                   Key=str('headlines/final' +
                                           '/periodico=publimetro/year=' +
                                           nombre[:4]+'/month=' +
                                           nombre[5:7]+'/day=' +
-                                          nombre[8:]+'/publimetro.csv'))
+                                          nombre[8:]+'/' +
+                                          nombre[:4]+'-' +
+                                          nombre[5:7]+'-' +
+                                          nombre[8:]+'.csv'))

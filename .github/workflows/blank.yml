@@ -62,6 +62,8 @@ jobs:
 
       - name: Zappa
         run: |
+          pwd
+          ls
           source env/bin/activate
           pytest
           zappa update dev

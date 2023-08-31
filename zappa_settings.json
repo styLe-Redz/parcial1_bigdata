@@ -11,7 +11,7 @@
         "s3_bucket": "parcial1lectura",
         "events": [{
            "function": "leer_archivo.obtener_html", 
-           "expression": "cron(25 15 * * ? *)" 
+           "expression": "cron(32 15 * * ? *)" 
        }]
     },
     

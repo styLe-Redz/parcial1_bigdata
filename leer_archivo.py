@@ -38,4 +38,3 @@ def obtener_html():
                   Key="news/raw/publimetro-"+str(fecha_actual)+".html")
 
 
-

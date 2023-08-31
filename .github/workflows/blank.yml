@@ -66,8 +66,6 @@ jobs:
           ls
           source env/bin/activate
           pytest
-          zappa deploy dev
-          zappa deploy dev2
           zappa update dev
           zappa update dev2
         

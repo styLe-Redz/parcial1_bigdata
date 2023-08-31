@@ -6,7 +6,7 @@
         "manage_roles": false,
         "apigateway_enabled": false,
         "aws_region": "us-east-1",
-        "project_name": "Parcial 1",
+        "project_name": "Parcial_1",
         "runtime": "python3.9",
         "s3_bucket": "parcial1lectura",
         "events": [{
@@ -22,7 +22,7 @@
         "manage_roles": false,
         "apigateway_enabled": false,
         "aws_region": "us-east-1",
-        "project_name": "Parcial 1",
+        "project_name": "Parcial_1",
         "runtime": "python3.9",
         "s3_bucket": "parcial1lectura",
         "events": [{

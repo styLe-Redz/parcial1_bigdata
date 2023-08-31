@@ -1,0 +1,39 @@
+{
+    "dev": {
+        "app_function": "leer_archivo.app",
+        "keep_warm": false,
+        "role_name": "LabRole",
+        "manage_roles": false,
+        "apigateway_enabled": false,
+        "aws_region": "us-east-1",
+        "project_name": "Parcial 1",
+        "runtime": "python3.9",
+        "s3_bucket": "parcial1lectura",
+        "events": [{
+           "function": "leer_archivo.obtener_html", 
+           "expression": "cron(00 09 * * ? *)" 
+       }]
+    },
+    
+    "dev2": {
+        "app_function": "procesar_archivo.app",
+        "keep_warm": false,
+        "role_name": "LabRole",
+        "manage_roles": false,
+        "apigateway_enabled": false,
+        "aws_region": "us-east-1",
+        "project_name": "Parcial 1",
+        "runtime": "python3.9",
+        "s3_bucket": "parcial1lectura",
+        "events": [{
+            "function": "procesar_archivo.f",
+            "event_source": {
+                  "arn":  "arn:aws:s3:::parcial1lectura",
+                  "events": [
+                    "s3:ObjectCreated:*" 
+                  ]
+               }
+            }]
+    }
+    
+}

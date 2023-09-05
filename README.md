@@ -1,3 +1,2 @@
 # parcial1_bigdata
-Christian Jiménez
-Alejandro Gonzáles
+Christian Jiménez y Alejandro Gonzáles
